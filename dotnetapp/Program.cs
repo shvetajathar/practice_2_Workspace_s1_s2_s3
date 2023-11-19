@@ -1,4 +1,9 @@
-using dotnetapp.Data;
+// using dotnetapp.Data;
+
+using dotnetapp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
+
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

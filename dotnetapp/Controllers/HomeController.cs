@@ -1,16 +1,15 @@
-﻿using dotnetapp.Data;
+﻿// using dotnetapp.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using dotnetapp.Models;
-
-
+namespace dotnetapp.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly BookStoreContext _context;
+    private readonly ApplicationDbContext _context;
 
-    public HomeController(BookStoreContext context)
+    public HomeController(ApplicationDbContext context)
     {
         _context = context;
     }
